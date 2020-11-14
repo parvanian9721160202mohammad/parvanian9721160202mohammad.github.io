@@ -1,0 +1,144 @@
+body{
+  direction: rtl;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  width: 100%;
+  background-color: #0f94e9;
+  color: white;
+  padding: 25px;
+  padding-right: 100px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  font-weight: bold;
+}
+
+.wrapper { 
+  margin: 0 200px;
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  grid-auto-rows: 100px; 
+
+} 
+
+.wrapper > div {
+  border-radius: 5px;
+  background-color: #bebebe;
+  padding: 1em;
+  color: #000000;
+  height: auto;
+  margin: 20px 10px;
+  box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.65);
+}
+
+.box1 { 
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 7; 
+  background-image: url("https://digiato.com/wp-content/uploads/2020/11/COVID-19-Coronavirus-Vaccine-1-800x450.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.post-title{
+  position: absolute;
+  bottom: 20px;
+  font-size: 30;
+  font-weight: 900;
+  color: white;
+}
+
+.box2{
+  grid-column-start: 3; 
+  grid-column-end: 4; 
+  grid-row-start: 1; 
+  grid-row-end: 7; 
+  background-image: url("https://digiato.com/wp-content/uploads/2020/11/poster-social-media-tribalism.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.box3{
+  grid-row-start: 7; 
+  grid-row-end: 14; 
+  background-image: url("https://digiato.com/wp-content/uploads/2020/11/152514-games-news-you-can-now-play-counter-strike-16-in-your-browser-image1-bhd9zn4sdt-w600.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.box4{
+  grid-row-start: 7; 
+  grid-row-end: 14; 
+  background-image: url("https://digiato.com/wp-content/uploads/2020/10/Digipici-Phone12pro-01-330x330.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.box5{
+  grid-row-start: 7; 
+  grid-row-end: 14; 
+  background-image: url("https://digiato.com/wp-content/uploads/2020/10/exoplanet-330x330.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.contact-background{
+  background-color: #0a66a1;
+  height: 100vh;
+}
+
+.wrapper1 { 
+  margin: 0 200px;
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-auto-rows: 100px; 
+} 
+
+.box11 { 
+  grid-column-start: 1; 
+  grid-column-end: 5; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+  padding: 15px;
+  color: white;
+}
+
+.black{
+  color: black ;
+}
+
+.box22 { 
+  grid-row-start: 3; 
+  grid-row-end: 5; 
+  box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.65);
+  background-color: white;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 5% 40%;
+}
+
+.box22 img {
+  height: 100%;
+  width: 100%;
+}
