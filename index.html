@@ -29,12 +29,12 @@
             </div>
         </div>
         <script type="text/javascript">
-            let items = document.getElementsByClassName('box1');
+            let items = document.getElementsByTagName('p');
             console.log(items);
             console.log(items[0]);
             items[0].textContent = 'Hello 2';
-            items[0].style.fontWeight = 'bold';
-            items[0].style.color = 'red'
+            items[1].style.fontWeight = 'bold';
+            items[2].style.color = 'red'
 
             for(var i = 0; i < items.length; i++){
                 items[i].textContent = i
