@@ -1,12 +1,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="./styles.css">
-        <title >
+        <title id="header-title">
             amin parvanian
         </title>
     </head>
     <body>
-        <nav class="navbar">
+        <nav id='main-header' class="navbar">
             <a href="index.html">خانه</a>
             <a href="info.html">درباره ما</a>
             <a href="contact.html">تماس با ما</a>
@@ -29,20 +29,15 @@
             </div>
         </div>
         <script type="text/javascript">
-            console.dir(document);
-            console.log(document.domain);
-            console.log(document.URL);
-            console.log(document.title);
-            document.title =  123;
-            console.log(document.doctype);
-            console.log(document.head);
-            console.log(document.body);
-            console.log(document.all);
-            console.log(document.all[16]);
-            document.all[16].textContent = 'Hello';
-            console.log(document.forms[0]);
-            console.log(document.links);
-            console.log(document.images);
+            console.log(document.getElementById('header-title'));
+            let headerTitle = document.getElementById('header-title');
+            let header = document.getElementById('main-header');
+            console.log(headerTitle);
+            headerTitle.textContent = 'Hello';
+            headerTitle.innerText = 'Goodbye';
+            console.log(headerTitle.innerText);
+            headerTitle.innerHTML = '<h3>Hello</h3>';
+            header.style.borderBottom = 'solid 3px #000';
         </script>
     </body>
 </html>
