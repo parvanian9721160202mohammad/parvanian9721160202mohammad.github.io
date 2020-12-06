@@ -6,13 +6,13 @@
         </title>
     </head>
     <body>
-        <nav id='main-header' class="navbar">
+        <nav class="navbar">
             <a href="index.html">خانه</a>
             <a href="info.html">درباره ما</a>
             <a href="contact.html">تماس با ما</a>
         </nav>
         <div class="wrapper">
-            <div id="box1" class="box1">
+            <div class="box1">
                 <p class="post-title">چرا برای خاتمه دادن به پاندمی، به بیشتر از یک واکسن کووید-۱۹ نیاز داریم؟</p>
             </div>
             <div class="box2">
@@ -29,15 +29,17 @@
             </div>
         </div>
         <script type="text/javascript">
-            console.log(document.getElementById('box1'));
-            let box1 = document.getElementById('box1');
-            let header = document.getElementById('main-header');
-            console.log(box1);
-            box1.textContent = 'Hello';
-            box1.innerText = 'Goodbye';
-            console.log(box1.innerText);
-            box1.innerHTML = '<h3>Hello</h3>';
-            header.style.borderBottom = 'solid 3px #000';
+            let items = document.querySelectorAll('.wrapper > div');
+            console.log(items);
+            console.log(items[0]);
+            items[0].textContent = 'Hello 2';
+            items[0].style.fontWeight = 'bold';
+            items[0].style.color = 'red'
+            
+            for(var i = 0; i < items.length; i++){
+                items[i].textContent = i
+                items[i].style.fontWeight = 'bold'
+            }
         </script>
     </body>
 </html>
